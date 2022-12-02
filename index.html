@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>Generate a</h1>
-    <h1>random password</h1>
-    <p>Never use a insecure password.</p>
-    <input type="number" id="length" onfocus="this.value=''">
-    <input type="checkbox" name="letter" id="letter">
-    <label for="letter">Letters</label>
-    <input type="checkbox" name="number" id="number">
-    <label for="number">Number</label>
-    <input type="checkbox" name="symbols" id="symbols">
-    <label for="symbols">Symbols</label>
+    <div class="intro">
+        <p class="heading1">Generate a</p>
+        <p class="heading2">random password</p>
+        <p class="line">Never use a insecure password.</p>
+    </div>
+    <div class="input">
+        <input type="number" id="length" onfocus="this.value=''">
+        <div>
+            <input type="checkbox" name="letter" id="letter">
+            <label for="letter">Letters</label>
+            <input type="checkbox" name="number" id="number">
+            <label for="number">Number</label>
+            <input type="checkbox" name="symbols" id="symbols">
+            <label for="symbols">Symbols</label>
+        </div>
+    </div>
     <button onclick="generate()">Generate passwords</button>
 
-    <div>
+    <div class="result">
         <div id="pass1"></div>
         <div id="pass2"></div>
     </div>
